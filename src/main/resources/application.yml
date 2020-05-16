@@ -1,4 +1,19 @@
 spring:
   redis:
-    host: localhost
-    port: 6397
+    host: redis
+    port: 6379
+  rabbitmq:
+    host: rabbitmq
+    username: guest
+    password: guest
+    port: 5672
+
+server:
+  port: 9090
+
+queue:
+  twitter: twitter-track-hashtag
+exchange:
+  twitter: twitter-track-exchange
+routing_key:
+  track: "*"
