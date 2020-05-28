@@ -109,7 +109,7 @@
 							<name>abahafart/${project.build.finalName}</name>
 							<build>
 								<from>openjdk:latest</from>
-								<entryPoint>java -Dspring.profiles.active=container -jar /application/${project.build.finalName}.jar</entryPoint>
+								<entryPoint>java -Dspring.profiles.active=docker -jar /application/${project.build.finalName}.jar</entryPoint>
 								<assembly>
 									<basedir>/application</basedir>
 									<descriptorRef>artifact</descriptorRef>
